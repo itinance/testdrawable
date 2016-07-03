@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Image,
   StyleSheet,
   Text,
   View
@@ -16,6 +17,11 @@ class testdrawable extends Component {
   render() {
     return (
       <View style={styles.container}>
+
+      <Image source={{uri: 'img_3665'}} style={{width: 140, height: 140}} />
+      <Image source={require('image!img_3665')} style={{width: 140, height: 140}} />
+
+
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
