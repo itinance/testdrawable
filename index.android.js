@@ -18,8 +18,8 @@ class testdrawable extends Component {
     return (
       <View style={styles.container}>
 
-      <Image source={{uri: 'img_3665'}} style={{width: 140, height: 140}} />
-      <Image source={require('image!img_3665')} style={{width: 140, height: 140}} />
+      <Image source={{uri: 'img_3665'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
+      <Image source={require('image!img_3665')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
 
 
         <Text style={styles.welcome}>
