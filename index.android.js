@@ -18,19 +18,12 @@ class testdrawable extends Component {
     return (
       <View style={styles.container}>
 
-      <Image width={200} height={267} source={{uri: 'img_3665'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
-      <Image width={200} height={267} source={require('image!img_3665')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
+      <Image width={200} height={267} source={{uri: 'jpg_3666'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
+      <Image width={200} height={267} source={require('image!jpg_3666')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
 
+      <Image width={200} height={267} source={{uri: 'png_3665'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
+      <Image width={200} height={267} source={require('image!png_3665')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
 
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
       </View>
     );
   }
