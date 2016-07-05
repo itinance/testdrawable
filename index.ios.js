@@ -9,23 +9,21 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View, Image
 } from 'react-native';
 
 class testdrawable extends Component {
   render() {
     return (
+
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+
+      <Image width={200} height={267} source={{uri: 'png_3665'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
+      <Image width={200} height={267} source={require('image!png_3665')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
+
+      <Image width={200} height={267} source={{uri: 'jpg_3666'}} style={{width: 140, height: 140, backgroundColor: 'red'}} />
+      <Image width={200} height={267} source={require('image!jpg_3666')} style={{width: 140, height: 140, backgroundColor: 'yellow'}} />
+
       </View>
     );
   }
